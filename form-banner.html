@@ -126,7 +126,7 @@
                         <!-- basic form  -->
                         <!-- ============================================================== -->
                         <div class="row">
-                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" id="Info">
                                 <div class="card">
                                     <h5 class="card-header">Basic Form</h5>
                                     <div class="card-body">
@@ -139,38 +139,73 @@
                                                 <label for="inputText3" class="col-form-label">Texto Alternativo</label>
                                                 <input id="inputText3" type="text" class="form-control">
                                             </div>
-                                            <div class="form-group">
-                                                <label for="inputText4" class="col-form-label">Number Input</label>
-                                                <input id="inputText4" type="number" class="form-control" placeholder="Numbers">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="inputPassword">Password</label>
-                                                <input id="inputPassword" type="password" placeholder="Password" class="form-control">
-                                            </div>
                                             <div class="custom-file mb-3">
                                                 <input type="file" class="custom-file-input" id="customFile">
                                                 <label class="custom-file-label" for="customFile">File Input</label>
                                             </div>
-                                            <div class="form-group">
-                                                <label for="exampleFormControlTextarea1">Example textarea</label>
-                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                            </div>
                                         </form>
                                     </div>
-                                    <div class="card-body border-top">
-                                        <h3>Sizing</h3>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" id="Fecha">
+                                <div class="card">
+                                    <h5 class="card-header">Fecha</h5>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="inputText3" class="col-form-label">Fecha de Alta</label>
+                                                <input id="inputText3" type="text" class="form-control">
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="inputText3" class="col-form-label">Fecha de Baja</label>
+                                                <input id="inputText3" type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" id="Pais">
+                                <div class="card">
+                                    <h5 class="card-header">Pais</h5>
+                                    <div class="card-body">
                                         <form>
-                                            <div class="form-group">
-                                                <label for="inputSmall" class="col-form-label">Small</label>
-                                                <input id="inputSmall" type="text" value=".form-control-sm" class="form-control form-control-sm">
+                                            <label class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" name="radio-inline" checked="" class="custom-control-input"><span class="custom-control-label">Argentina</span>
+                                            </label>
+                                            <label class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" name="radio-inline" checked="" class="custom-control-input"><span class="custom-control-label">Uruguay</span>
+                                            </label>
+                                            <label class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" name="radio-inline" checked="" class="custom-control-input"><span class="custom-control-label">Paraguay</span>
+                                            </label>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" id="Info">
+                                <div class="card">
+                                    <h5 class="card-header">Perfil</h5>
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="custom-file mb-3">
+                                                <label for="inputText3" class="col-form-label">Tipo de Negocio</label>
                                             </div>
+                                            <label class="custom-control custom-checkbox custom-control-inline">
+                                                <input type="checkbox" checked="" class="custom-control-input"><span class="custom-control-label">CR</span>
+                                            </label>
+                                            <label class="custom-control custom-checkbox custom-control-inline">
+                                                <input type="checkbox" class="custom-control-input"><span class="custom-control-label">CO</span>
+                                            </label>
+                                            <label class="custom-control custom-checkbox custom-control-inline">
+                                                <input type="checkbox" class="custom-control-input"><span class="custom-control-label">PP</span>
+                                            </label>
                                             <div class="form-group">
-                                                <label for="inputDefault" class="col-form-label">Default</label>
-                                                <input id="inputDefault" type="text" value="Default input" class="form-control">
+                                                <label for="inputText3" class="col-form-label">Texto Alternativo</label>
+                                                <input id="inputText3" type="text" class="form-control">
                                             </div>
-                                            <div class="form-group">
-                                                <label for="inputLarge" class="col-form-label">Large</label>
-                                                <input id="inputLarge" type="text" value=".form-control-lg" class="form-control form-control-lg">
+                                            <div class="custom-file mb-3">
+                                                <input type="file" class="custom-file-input" id="customFile">
+                                                <label class="custom-file-label" for="customFile">File Input</label>
                                             </div>
                                         </form>
                                     </div>
@@ -694,9 +729,9 @@
                     <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12">
                         <div class="sidebar-nav-fixed">
                             <ul class="list-unstyled">
-                                <li><a href="#overview" class="active">Overview</a></li>
-                                <li><a href="#basicform">Basic Form</a></li>
-                                <li><a href="#select">Select</a></li>
+                                <li><a href="#Info" class="active">Info</a></li>
+                                <li><a href="#Fecha">Fecha</a></li>
+                                <li><a href="#Pais">Pais</a></li>
                                 <li><a href="#checkboxradio">Checkbox & Radio</a></li>
                                 <li><a href="#validation">Validation state</a></li>
                                 <li><a href="#inputgroup">Input Groups</a></li>
